@@ -1,0 +1,8 @@
+.terraform
+.terraform.lock.hcl
+terraform.tfstate*
+terraform.tfvars
+.DS_Store
+*.png
+*.drawio
+secrets*
