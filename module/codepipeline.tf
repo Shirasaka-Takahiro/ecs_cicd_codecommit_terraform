@@ -13,13 +13,12 @@ resource "aws_codepipeline" "pipeline" {
       name             = "Source"
       category         = "Source"
       owner            = "AWS"
-      provider         = "CodeStarSourceConnection"
+      provider         = "CodeCommit"
       version          = "1"
       output_artifacts = ["source_output"]
 
       configuration = {
-        ConnectionArn        = aws_codestarconnections_connection.github.arn
-        FullRepositoryId     = "Shirasaka-Takahiro/ecs_cicd_terraform"
+        RepositoryName = var.code_repository_name
         BranchName              = "main"
       }
     }
@@ -60,11 +59,4 @@ resource "aws_codepipeline" "pipeline" {
       }
     }
   }
-}
-
-
-##Codestar Connections Connection
-resource "aws_codestarconnections_connection" "github" {
-  name = "${var.general_config["project"]}-github-connection"
-  provider_type = "GitHub"
 }

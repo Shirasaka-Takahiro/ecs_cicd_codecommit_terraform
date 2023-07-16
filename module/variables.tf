@@ -25,3 +25,4 @@ provider "aws" {
   region = var.regions["virginia"]
 }
 variable "github_url" {}
+variable "code_repository_name" {}

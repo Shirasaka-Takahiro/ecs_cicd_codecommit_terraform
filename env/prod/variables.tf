@@ -154,3 +154,10 @@ variable "github_url" {
   type        = string
   default     = "https://github.com/Shirasaka-Takahiro/ecs_cicd_terraform.git"
 }
+
+##Codecommit Repository Name
+variable "code_repository_name" {
+  description = "codecommit repository name"
+  type        = string
+  default     = "example"
+}
