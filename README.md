@@ -41,5 +41,6 @@ docker build -t {IMAGE_NAME}:latest ./docker
 7. Clone repository from codecommit
 8. Copy docker directory to the directory cloned from codecommit
 9. Move brach to main from master(ex git brach -b main)
-10. Push the directory to codecommit repository
-11. Confirm if codepipeline works
+10. Add buildspec.yml the directory cloned from codecommit
+11. Push the directory to codecommit repository
+12. Confirm if codepipeline works
