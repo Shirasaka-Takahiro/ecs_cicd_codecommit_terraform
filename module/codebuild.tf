@@ -36,8 +36,8 @@ resource "aws_codebuild_project" "project" {
   }
 
   source {
-    type            = "CODECOMMIT"
-    location        = aws_codecommit_repository.code_repository_name.clone_url_http
+    type            = "CODEPIPELINE"
+    location        = aws_codecommit_repository.repository.clone_url_http
     git_clone_depth = 1
     buildspec       = "buildspec.yml"
   }

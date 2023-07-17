@@ -24,11 +24,11 @@ module "prod" {
   dmz_subnet_ids     = module.prod.dmz_subnet_ids
   private_subnet_ids = module.prod.private_subnet_ids
   #zone_name          = var.zone_name
-  sub_domain_1    = var.sub_domain_1
-  repository_name = var.repository_name
-  image_name      = var.image_name
-  fargate_cpu     = var.fargate_cpu
-  fargate_memory  = var.fargate_memory
-  github_url = var.github_url
+  sub_domain_1         = var.sub_domain_1
+  repository_name      = var.repository_name
+  image_name           = var.image_name
+  fargate_cpu          = var.fargate_cpu
+  fargate_memory       = var.fargate_memory
+  github_url           = var.github_url
   code_repository_name = var.code_repository_name
 }

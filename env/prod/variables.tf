@@ -159,5 +159,5 @@ variable "github_url" {
 variable "code_repository_name" {
   description = "codecommit repository name"
   type        = string
-  default     = "example"
+  default     = "example-web"
 }

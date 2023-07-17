@@ -4,7 +4,7 @@
       {
         "Effect": "Allow",
         "Principal": {
-          "Service": "codecommit.amazonaws.com"
+          "Service": "events.amazonaws.com"
         },
         "Action": "sts:AssumeRole"
       }
