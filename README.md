@@ -20,6 +20,8 @@ S3 x 3
 <br />
 IAM x 3
 <br />
+Codecommit
+<br />
 Codebuild
 <br />
 Codepipeline
@@ -35,5 +37,9 @@ docker build -t {IMAGE_NAME}:latest ./docker
 3. terraform init
 4. terraform plan
 5. terraform apply
-6. Connect Github repository to AWS Account throughout Codestar Connections Connection
-7. Restart Codepipeline
+6. Download credential info for git on IAM console
+7. Clone repository from codecommit
+8. Copy docker directory to the directory cloned from codecommit
+9. Move brach to main from master(ex git brach -b main)
+10. Push the directory to codecommit repository
+11. Confirm if codepipeline works
